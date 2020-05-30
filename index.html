@@ -1,83 +1,194 @@
+<!doctype html>
+<html lang="en">
+...
+
+</html>
 <html>
+
 <head>
-	<title>U of A Healthy Cafe</title>
-	<style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		* { 
-			font-family: "Times New Roman"; 
-			font-size: 20px;
-		}
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-
-		img {
-			width: 190px;
-			margin-right: 20px;
-			margin-left: 20px;
-		}
-
-		h1, h2, h3 {
-			margin-left: 20px;
-		}
-
-		p {
-			margin-right: 300px;
-		}
-
-	</style>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
 </head>
+
+<title>U of A Healthy Cafe</title>
+
+<style>
+	* {
+		font-family: "Times New Roman";
+		font-size: 20px;
+	}
+
+	.heading {
+		font-size: 46px;
+		margin: 50px 0 50px 100px;
+
+	}
+
+	img {}
+
+	h2 {
+		
+
+	}
+
+	h3 {
+		font-size: 30px;
+		text-align: left;
+	}
+
+	p {
+		margin-top: 40px;
+	}
+
+	.call-to-action {
+		background-color: #62B1DE;
+		font-size: 120%;
+		padding: 5px;
+	}
+</style>
+</head>
+
 <body>
-	<h1>Welcome to the U of A Healthy Cafe</h1>
+	<div class="heading-wrapper">
+		<h1 class="heading">Welcome to the U of A Healthy Cafe</h1>
+	</div>
 
-	<h2>Vegan Appetizers</h2>
-	<table>
-		<tr>
-			<td>
-				<h3>Guacamole</h3>
-				<img src="images/guacamole-12.jpg" alt="Guacamole" width="200px" name="Guac">
-			</td>
-			<td>
-				<p>
-					There are lots of takes on this classic appetizer. We stuck with a traditional recipe (why mess with perfection!) which includes locally-grown<br/> 
-					organic avocados, cilantro, finely diced tomatoes and jalapeno and a squeeze of lime juice. Served with our homemade organic tortillas! 
-				</p>
-			</td>
-		</tr>
-	</table>
+	<div class="container">
 
-	<h2>Healthy Entree</h2>
-	<table>
-		<tr>
-			<td>
-				<h3>Black Bean Tacos</h3>
-				<img src="images/black-bean-tacos-11.jpg" alt="Black Bean Tacos" width="200px" name="Steak">
-			</td>
-			<td>
-				<p>
-					Our most popular entree. Seasoned organic black beans paired with grilled veggies. Topped with our famous homemade salsa.
-				</p>
-			</td>
-		</tr>
-	</table>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="images/guacamole-12-500x500.jpg" width="100%" height="225"
+						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+						role="img" />
+					<div class="card-body">
+						<h3>Classic Guacamole</h3>
+						<p class="card-text">
+							There are lots of takes on this classic appetizer. We stuck with a traditional recipe (why
+							mess with
+							perfection!). Served
+							with our homemade organic tortillas!
+						</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="call-to-action">Add to Cart</button>
+							</div>
+							<small class="text-muted">9 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="images/black-bean-tacos-11.jpg" width="100%" height="225"
+						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+						role="img" />
+					<div class="card-body">
+						<h3>Black Bean Chipotle Tacos</h3>
+						<p class="card-text">Our most popular entree. Seasoned organic black beans paired with grilled
+							veggies. Topped with our
+							famous homemade salsa.</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="call-to-action">Add to Cart</button>
+							</div>
+							<small class="text-muted">9 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="images/ice-cream.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<div class="card-body">
+						<h3>Homemade Ice Cream</h3>
+						<p class="card-text">
+							Chooce from the following flavors:
+							<ul>
+								<li>Old Fashioned Vanilla</li>
+								<li>Strawberry</li>
+								<li>Classic Chocolate</li>
+								<li>Peanut Butter Cup</li>
+							</ul>
+						</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="call-to-action">Add to Cart</button>
+							</div>
+							<small class="text-muted">9 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	<h2>Dessert</h2>
-	<table>
-		<tr>
-			<td>
-				<h3>Our Own Homemade, Organic Ice Cream!</h3>
-				<img src="images/ice-cream.jpg" alt="Ice Cream">
-			</td>
-			<td>
-				<p>
-					Chooce from the following flavors:
-					<ul>
-					<li>Old Fashioned Vanilla</li>
-					<li>Strawberry</li>
-					<li>Classic Chocolate</li>
-					<li>Peanut Butter Cup</li>
-					</ul>
-				</p>
-			</td>
-		</tr>
-	</table>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="images/Vegan-Sandwich.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<div class="card-body">
+						<h3>Spicy Vegan Sandwich</h3>
+						<p class="card-text">Roasted veggies piled high on fresh baked bread with our signature chipotle sauce</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="call-to-action">Add to Cart</button>
+							</div>
+							<small class="text-muted">9 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="images/spaghetti.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<div class="card-body">
+						<h3>Roasted Garlic Pasta</h3>
+						<p class="card-text">Homemade pasta with roasted veggies and delicious garlic sauce. A classic!</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="call-to-action">Add to Cart</button>
+							</div>
+							<small class="text-muted">9 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="images/Black-Forest-Cake-Recipe.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<div class="card-body">
+						<h3>Black Forest Cake</h3>
+						<p class="card-text">Our famous Black Forest Cake. You've never had it like this before! </p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="call-to-action">Add to Cart</button>
+							</div>
+							<small class="text-muted">9 mins</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+		</script>
 </body>
+
 </html>
