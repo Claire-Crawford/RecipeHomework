@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-...
 
 </html>
 <html>
@@ -12,6 +11,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
@@ -28,14 +29,7 @@
 
 	.heading {
 		font-size: 46px;
-		margin: 50px 0 50px 100px;
-
-	}
-
-	img {}
-
-	h2 {
-		
+		/* margin: 50px 0 50px 100px; */
 
 	}
 
@@ -53,20 +47,76 @@
 		font-size: 120%;
 		padding: 5px;
 	}
+
+
+	@media screen and (max-width: 1200) {
+		body {
+			background-color: #dac292;
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+
+		body {
+			background-color: #c4b7a6;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+
+		body {
+			background-color: #b9936c;
+		}
+	}
+
+	.col-12 {
+		margin-bottom: 20px;
+
+	}
+
+   .heading-wrapper {
+	   padding-top: 40px;
+	   padding-left: 40px;
+	   height: 200px;
+   }
+
+   .contact-us {
+	   float:left;
+	   margin-left: 30px;
+   }
+   
+   container {
+	display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+   }
+		
+
+   .col {display: table-cell; 
+
+
 </style>
 </head>
 
 <body>
 	<div class="heading-wrapper">
 		<h1 class="heading">Welcome to the U of A Healthy Cafe</h1>
+		<div class="contact-us"> <a href="contact.html">Click here to contact us. </a>
+		</div>
 	</div>
+
 
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-12">
+				<img class="img-fluid" src="images/dining.jpg" alt="dining">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
 				<div class="card mb-4 shadow-sm">
-					<img src="images/guacamole-12-500x500.jpg" width="100%" height="225"
+					<img class="card-img-top" src="images/guacamole-12-500x500.jpg" width="100%" height="225"
 						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
 						role="img" />
 					<div class="card-body">
@@ -81,14 +131,13 @@
 							<div class="btn-group">
 								<button type="button" class="call-to-action">Add to Cart</button>
 							</div>
-							<small class="text-muted">9 mins</small>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6">
 				<div class="card mb-4 shadow-sm">
-					<img src="images/black-bean-tacos-11.jpg" width="100%" height="225"
+					<img class="card-img-top" src="images/black-bean-tacos-11.jpg" width="100%" height="225"
 						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
 						role="img" />
 					<div class="card-body">
@@ -100,15 +149,15 @@
 							<div class="btn-group">
 								<button type="button" class="call-to-action">Add to Cart</button>
 							</div>
-							<small class="text-muted">9 mins</small>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6">
 				<div class="card mb-4 shadow-sm">
-					<img src="images/ice-cream.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<img class="card-img-top" src="images/ice-cream.jpg" width="100%" height="225"
+						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+						role="img" />
 					<div class="card-body">
 						<h3>Homemade Ice Cream</h3>
 						<p class="card-text">
@@ -116,7 +165,6 @@
 							<ul>
 								<li>Old Fashioned Vanilla</li>
 								<li>Strawberry</li>
-								<li>Classic Chocolate</li>
 								<li>Peanut Butter Cup</li>
 							</ul>
 						</p>
@@ -124,62 +172,63 @@
 							<div class="btn-group">
 								<button type="button" class="call-to-action">Add to Cart</button>
 							</div>
-							<small class="text-muted">9 mins</small>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6">
 				<div class="card mb-4 shadow-sm">
-					<img src="images/Vegan-Sandwich.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<img class="card-img-top" src="images/Vegan-Sandwich.jpg" width="100%" height="225"
+						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+						role="img" />
 					<div class="card-body">
 						<h3>Spicy Vegan Sandwich</h3>
-						<p class="card-text">Roasted veggies piled high on fresh baked bread with our signature chipotle sauce</p>
+						<p class="card-text">Roasted veggies piled high on fresh baked bread with our signature chipotle
+							sauce</p>
 						<div class="d-flex justify-content-between align-items-center">
 							<div class="btn-group">
 								<button type="button" class="call-to-action">Add to Cart</button>
 							</div>
-							<small class="text-muted">9 mins</small>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6">
 				<div class="card mb-4 shadow-sm">
-					<img src="images/spaghetti.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<img class="card-img-top" src="images/spaghetti.jpg" width="100%" height="225"
+						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+						role="img" />
 					<div class="card-body">
 						<h3>Roasted Garlic Pasta</h3>
-						<p class="card-text">Homemade pasta with roasted veggies and delicious garlic sauce. A classic!</p>
+						<p class="card-text">Homemade pasta with roasted veggies and delicious garlic sauce. A classic!
+						</p>
 						<div class="d-flex justify-content-between align-items-center">
 							<div class="btn-group">
 								<button type="button" class="call-to-action">Add to Cart</button>
 							</div>
-							<small class="text-muted">9 mins</small>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6">
 				<div class="card mb-4 shadow-sm">
-					<img src="images/Black-Forest-Cake-Recipe.jpg" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-					preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+					<img class="card-img-top" src="images/Black-Forest-Cake-Recipe.jpg" width="100%" height="225"
+						xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+						role="img" />
 					<div class="card-body">
 						<h3>Black Forest Cake</h3>
-						<p class="card-text">Our famous Black Forest Cake. You've never had it like this before! </p>
+						<p class="card-text">Our famous Black Forest Cake. You've never had cake like this before! </p>
 						<div class="d-flex justify-content-between align-items-center">
 							<div class="btn-group">
 								<button type="button" class="call-to-action">Add to Cart</button>
 							</div>
-							<small class="text-muted">9 mins</small>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 		</script>
@@ -189,6 +238,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
+
 </body>
 
 </html>
